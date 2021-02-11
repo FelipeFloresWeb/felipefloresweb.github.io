@@ -1,0 +1,92 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    position: absolute;
+		left:10%;
+		top:52%;
+		margin-left:-110px;
+		margin-top:-40px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(189, 180, 155);
+}
+
+#foto {
+    width: 300px;
+    position: absolute;
+		left:8%;
+		top:6%;
+		margin-left:-110px;
+		margin-top:-40px;
+}
+
+.links {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    color: black;
+}
+
+#fotofundo {
+    width: 1600px;
+    max-width: 90%;
+    float: right;
+    font-style: normal;
+}
+
+#cursos {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#habilidades {
+    color: rgb(8, 31, 134);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#lista1 {
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+#lista2 {
+    font-size: 20px;
+}
+
+#lista3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#lista4 {
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#lista5 {
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#lista6 {
+    font-size: 20px;
+    font-weight: 900;
+}
