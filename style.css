@@ -42,26 +42,26 @@ body {
     font-size: 23px;
 }
 
-#habilitiesSector {
-    padding-top: 70px;
-    padding-bottom: 20px;  
+#habilitiesDivLefth { 
+    float: left;  
 }
 
-#devFoto {
-    position: absolute;
-    left: 485px;
-}
-
-#habilitiesItems {
-    padding-top: 0px;
+#habilitiesDivRight {
+    float: right;
 }
 
 .habilidades {
-    width: 500px;
-    margin-left: 50px;
     color: black;
     font-family: 'Teko', sans-serif;
     font-size: 25px;
+}
+
+#habilities {
+    margin: 40px 40px;
+}
+
+#Courses {
+    margin: 40px 40px;
 }
 
 /*
