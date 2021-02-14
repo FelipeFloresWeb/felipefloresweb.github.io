@@ -8,7 +8,8 @@ body {
 }
 
 #header {
-    padding-top: 10px;
+    height: 500px;
+    padding-top: 20px;
     padding-bottom: 10px;
     background-image: url(https://blog.vulpi.com.br/wp-content/uploads/2017/11/o-que-faz-um-desenvolvedor.jpeg);
     background-size: cover;
@@ -35,7 +36,7 @@ body {
 }
 
 #sobreMim {
-    margin-top: 150px;
+    margin-top: 320px;
     margin-left: 10px;
     color: white;
     font-family: 'Teko', sans-serif;
@@ -70,17 +71,33 @@ body {
 
 #Courses {
     margin: 40px 40px;
+    display: inline-block;
+    width: 800px;
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
 }
 
+
+
 #linksDiv {
-    padding-top: 200px;
+    padding-top: 50px;
     margin: 40px 40px;
-    float: left;
+    display: inline-block;
     
 }
 
 .links {
-    padding-right: 50px;
+    padding-right: 350px;
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+
+#blog {
+    color: black;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
 }
 
 /*
