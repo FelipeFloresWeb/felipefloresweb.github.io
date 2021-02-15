@@ -14,8 +14,17 @@ body {
     background-image: url(https://blog.vulpi.com.br/wp-content/uploads/2017/11/o-que-faz-um-desenvolvedor.jpeg);
     background-size: cover;
     background-position: 100% 90%;      
+    display: inline-block;
 }
 
+#fotoPerfil {
+    width: 270px;
+    position: absolute;
+    left: 0;
+    top: 110px;
+    border-radius: 100%;
+
+}
 
 #mainTitle {
     margin-top: -20px;
@@ -41,6 +50,8 @@ body {
     color: white;
     font-family: 'Teko', sans-serif;
     font-size: 23px;
+    background-color: black;
+    letter-spacing: 1px;
 }
 
 #habilitiesDivLefth { 
@@ -62,6 +73,7 @@ body {
 #habilities {
     margin: 40px 40px;
     display: inline-block;
+    size: cover;
 }
 
 #fotoDev {
