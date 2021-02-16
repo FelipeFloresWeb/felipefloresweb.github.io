@@ -71,7 +71,7 @@ body {
 
 #habilitiesDivRight {
     display: inline-block;
-    margin-left: 250px;
+    margin-left: 100px;
     position: absolute; 
 }
 
@@ -79,10 +79,14 @@ body {
   width: 450px;
 }
 
+#logoTrybe {
+    width: 400px;
+}
+
 .subtitulo {
     color: black;
     font-family: 'Teko', sans-serif;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 #Courses {
@@ -149,9 +153,8 @@ body {
 
 #linksDiv {
     position: absolute;
-    padding-top: 350px;
-    margin: 40px 40px;
-    display: inline-block;
+    margin: 400px 40px 40px 40px;
+    display: block;
     
 }
 
@@ -167,14 +170,3 @@ body {
     font-family: 'Teko', sans-serif;
     font-size: 25px;
 }
-
-/*
-
-    <img id="foto" src="https://avatars.githubusercontent.com/u/78596051?s=400&u=ff1a10fe63ba30b5b4203c35d028c6c5fe1d9be9&v=4" alt="Foto de Felipe Flores">
-    <img id="fotoFundoHeader" src="https://blog.vulpi.com.br/wp-content/uploads/2017/11/o-que-faz-um-desenvolvedor.jpeg" alt="Foto de uma tela de computador">
-
-    <img id="fundoConteudo" src="https://miro.medium.com/max/2560/1*TKOZ1vWC5P1BONZiPZftZQ.jpeg" alt="imagem fundo sobre programação web">
-
-    <img id="fotofundo" src="https://www.isbrasil.info/blog/_images/blog/destaques/2018/07/02/o-papel-do-programador-na-definicao-da-estrategia-digital_15aa61961ff3a95c582773cbeaeb5be7.jpg" alt="Foto programação">
-
-    */
