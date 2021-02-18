@@ -9,7 +9,6 @@ body {
 
 #header {
     width: 100%;
-    padding-top: 20px;
     background-image: url(https://blog.vulpi.com.br/wp-content/uploads/2017/11/o-que-faz-um-desenvolvedor.jpeg);
     background-size: cover;
     background-position: 100% 90%;      
@@ -26,8 +25,9 @@ body {
 }
 
 #mainTitle {
-    margin-top: -20px;
+    margin-top: -0px;
     margin-left: 10px;
+    margin-bottom: -40px;
     width: 100%;
     color: rgb(204, 200, 200);
     font-family: 'Teko', sans-serif;
@@ -39,7 +39,7 @@ body {
 
 #informações {
     width: 100%;
-    margin-top: -30px;
+    padding-top: 0px;
     margin-left: 10px;
     color: white;
     font-family: 'Teko', sans-serif;
