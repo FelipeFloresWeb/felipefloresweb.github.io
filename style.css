@@ -54,6 +54,8 @@ body {
 }
 
 #habilities {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: inline-block;
     width: 100%;
     text-align: justify;
@@ -139,11 +141,13 @@ body {
 #cursoHtml {
     display: inline-block;
     width: 150px;
+    padding-left: 90px;
 }
 
 #cursoCss {
     display: inline-block;
     width: 150px;
+    padding-left: 60px;
 }
 
 #cursoGit {
@@ -154,14 +158,17 @@ body {
 #cursoGitHub {
     display: inline-block;
     width: 250px;
+    padding-left: 65px;
 }
 
 #cursoJavaScript {
     display: inline-block;
     width: 250px;
+    padding-left: 70px;
 }
 
 #linksDiv {    
+    margin-top: 50px;
     display: inline-block;
     text-align: justify;
     width: 100%;
@@ -169,6 +176,7 @@ body {
 }
 
 .links {
+    text-decoration: none;
     color: black;
     font-family: 'Teko', sans-serif;
     font-size: 50px;
