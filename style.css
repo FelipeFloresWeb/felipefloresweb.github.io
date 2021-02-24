@@ -8,8 +8,7 @@ body {
 }
 
 #header {
-    width: 100%;
-    padding-top: 20px;
+
     background-image: url(https://blog.vulpi.com.br/wp-content/uploads/2017/11/o-que-faz-um-desenvolvedor.jpeg);
     background-size: cover;
     background-position: 100% 90%;      
@@ -19,27 +18,29 @@ body {
 #fotoPerfil {
     width: 270px;
     position: absolute;
-    top: 110px;
+    
     border-radius: 100%;
-
+    display: inline-block;
 }
 
 #mainTitle {
-    margin-top: -20px;
     margin-left: 10px;
+    margin-bottom: -30px;
     color: rgb(204, 200, 200);
     font-family: 'Teko', sans-serif;
     font-size: 70px;
     font-weight: lighter;
     letter-spacing: 1px;
+    display: block;
 }
 
 #informações {
-    margin-top: -30px;
+    padding-top: 0px;
     margin-left: 10px;
     color: white;
     font-family: 'Teko', sans-serif;
     font-size: 30px;
+    display: block;
 }
 
 #sobreMim {
@@ -63,13 +64,13 @@ body {
 
 #habilities:after {
     content: '';
-    display: inline-block;
+    display: block;
     width: 100%;
     
 }
 
 #habilitiesDivLefth { 
-    width: 33,333%;
+    width: 25%;
     display: inline-block;
     color: black;
     line-height: 38pt;
@@ -81,6 +82,7 @@ body {
 #habilitiesDivRight {
     display: inline-block;
     width: 66,666%;
+    padding-left: 60px;
 }
 
 #fotoDev {
@@ -89,6 +91,7 @@ body {
 
 #logoTrybe {
     width: 400px;
+    margin-left: 80px;
 }
 
 .subtitulo {
@@ -129,42 +132,44 @@ body {
 
 #imagemCursos {
     display: inline-block;
-    width: 70%;
-    
+    width: 70%;;
+    text-align: center;
 }
 
 #cursoUnix { 
     display: inline-block;
     width: 250px;
+    margin: 20px 20px 20px 20px;
 }
 
 #cursoHtml {
     display: inline-block;
     width: 150px;
-    padding-left: 90px;
+    margin: 20px 20px 20px 20px;
 }
 
 #cursoCss {
     display: inline-block;
     width: 150px;
-    padding-left: 60px;
+    margin: 20px 20px 20px 20px;
 }
 
 #cursoGit {
     display: inline-block;
     width: 250px;
+    margin: 20px 20px 20px 20px;
 }
 
 #cursoGitHub {
     display: inline-block;
     width: 250px;
-    padding-left: 65px;
+    margin: 20px 20px 20px 20px;
 }
 
 #cursoJavaScript {
     display: inline-block;
     width: 250px;
-    padding-left: 70px;
+    margin: 20px 20px 20px 20px;
 }
 
 #linksDiv {    
@@ -172,14 +177,13 @@ body {
     display: inline-block;
     text-align: justify;
     width: 100%;
-    
 }
 
 .links {
     text-decoration: none;
     color: black;
     font-family: 'Teko', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: justify;
 }
 
