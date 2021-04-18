@@ -29,7 +29,7 @@ const _ = {
   Ezreal: 'img/champion/loading/Ezreal_0.jpg',
   Fiddlesticks: 'img/champion/loading/Fiddlesticks_0.jpg',
   Fiora: 'img/champion/loading/Fiora_0.jpg',
-  Fizz: 'img/champion/splash/Fizz_0.jpg',
+  Fizz: 'img/champion/loading/Fizz_0.jpg',
   Galio: 'img/champion/loading/Galio_0.jpg',
   Gangplank: 'img/champion/loading/Gangplank_0.jpg',
   Garen: 'img/champion/loading/Garen_0.jpg',
