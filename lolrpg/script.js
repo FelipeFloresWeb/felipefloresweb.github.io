@@ -6,7 +6,7 @@ import champions from './champions.js';
 import championsCards from './championsCards.js';
 
 function fetchResponse() {
-  return fetch('http://ddragon.leagueoflegends.com/cdn/11.8.1/data/pt_BR/champion.json')
+  return fetch('https://ddragon.leagueoflegends.com/cdn/11.8.1/data/pt_BR/champion.json')
     .then((data) => data.json())
     .then((champion) => champion.data);
 }
