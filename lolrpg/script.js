@@ -72,8 +72,8 @@ const showChampionsNames = (champions1) => {
 
     // Comente/Descomente as linhas 75 e 76 deste arquivo e as linhas 35 e 36 do arquivo css,
     // para adicionar/remover icones aos nomes dos campeões.
-    createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
-    createSpan.style.backgroundSize = '100%';
+    // createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
+    // createSpan.style.backgroundSize = '100%';
 
     createSpan.addEventListener('click', (event) => selectChamp(event, champion));
     selectDivChamps.appendChild(createSpan);
