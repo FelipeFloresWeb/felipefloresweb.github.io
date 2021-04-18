@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4c94b53fe630f489/5e718af13ed79e6484b31580/LOL_PROMOART_4.jpg);
+  background-size: cover;
+}
+
+#title {
+  width: 100%;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgoldenrod;
+  font-size: 45px;
+  padding: 0 20px;
+  -webkit-text-stroke-width: 1px; /* largura da borda */
+  -webkit-text-stroke-color: #000; /* cor da borda */
+}
+
+#title:hover {
+  background-color: black;
+}
+
+.champion {
+  color: chartreuse;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  -webkit-text-stroke-width: 0.4px; /* largura da borda */
+  -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
+  border-radius: 100%;
+  border: solid 2px chartreuse;
+}
+
+.champion:hover {
+  cursor: pointer;
+}
+
+.selected {
+  font-size: 200px;
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  transition: 1s;
+  padding: 100px;
+}
+
+.deSelected {
+  background-color: none;
+  position: absolute;
+  top: 40%;
+  transition: 1s;
+}
+
+#description {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+#champs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  line-height: 30px;
+  justify-content: space-around;
+}
+
+#champCards {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 30px;
+  line-height: 30px;
+  font-family: serif;
+  font-size: 28px;
+  color: rgb(177, 167, 25);
+  font-weight: 700;
+  text-align: justify;
+}
+
+.cardicon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#cardText {
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
