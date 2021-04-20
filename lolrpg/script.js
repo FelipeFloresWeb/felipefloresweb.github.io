@@ -24,7 +24,10 @@ const generateHistoryChampion = (fighter) => `${fighter.name} "${fighter.title}"
     Defesa Mágica por nível: ${fighter.stats.armorperlevel} pontos<br>
     Pontos de vida por nível: ${fighter.stats.spellblock} pontos<br>
     Classe: ${fighter.tags.toString().replace(',', ', ')}
-<a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase().replace('. ', '-').replace('\'', '-')}/"><br><br>(clique aqui para mais informações..)</a>`;
+<a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase()
+.replace('. ', '-')
+.replace(' ', '-')
+.replace('\'', '-')}/"><br><br>(clique aqui para mais informações..)</a>`;
 
 const showchamp = (fighter) => {
   const selectImages = document.querySelectorAll('.championscards');
@@ -90,6 +93,7 @@ window.onload = async function onload() {
     const champions0 = await fetchResponse();
     const arrchampions = Object.values(champions0);
     showChampionsNames(arrchampions);
+    console.log(arrchampions);
   } catch (error) {
     alert(error);
   }
