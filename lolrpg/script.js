@@ -73,7 +73,7 @@ const showChampionsNames = (champions1) => {
     createSpan.innerHTML = champion.name;
     createSpan.classList.add('champion');
 
-    // Comente/Descomente as linhas 75 e 76 deste arquivo e as linhas 35 e 36 do arquivo css,
+    // Comente/Descomente as linhas 78 e 79 deste arquivo e as linhas 35 e 36 do arquivo css,
     // para adicionar/remover icones aos nomes dos campeões.
     // createSpan.style.backgroundImage = `url(img/champion/tiles/${champion.image.full})`;
     // createSpan.style.backgroundSize = '100%';
@@ -93,7 +93,6 @@ window.onload = async function onload() {
     const champions0 = await fetchResponse();
     const arrchampions = Object.values(champions0);
     showChampionsNames(arrchampions);
-    console.log(arrchampions);
   } catch (error) {
     alert(error);
   }
