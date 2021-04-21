@@ -80,7 +80,6 @@ const showChampionsNames = (champions1) => {
 
     createSpan.addEventListener('click', (event) => selectChamp(event, champion));
     selectDivChamps.appendChild(createSpan);
-
     // const createImg = document.createElement('img');
     // createImg.classList.add('cardicon');
     // createImg.src = `img/champion/tiles/${champion.image.full}`;
@@ -88,11 +87,48 @@ const showChampionsNames = (champions1) => {
   });
 };
 
+const showChampionsFormataCardsOn = (arrchamps) => {
+  const selectchampions = arrchamps;
+  const selsectChampsText = document.querySelectorAll('span', '.champion');
+  const selectButton = document.querySelector('#button');
+  selectButton.addEventListener('click', () => {
+
+    selsectChampsText.forEach((champ, index) => {
+      if (champ.className === 'champion championCard') {
+        champ.classList.remove('championCard');
+        champ.style.removeProperty('background-image');
+      } else {
+      champ.classList.add('championCard');
+      champ.style.backgroundImage = `url(img/champion/tiles/${selectchampions[index].image.full})`;
+      // champ.style.backgroundSize = '100%';
+      // champ.style.border = 'solid 2px chartreuse';
+      // champ.style.borderRadius = '100%';
+      }
+    })
+  })
+};
+
+const showChampionsFormataCardsOff = (arrchamps) => {
+  const selectchampions = arrchamps;
+  const selsectChampsText = document.querySelectorAll('span', '.champion');
+  const selectButton = document.querySelector('#button');
+  selectButton.addEventListener('click', () => {
+    selsectChampsText.forEach((champ, index) => {
+      champ.style.backgroundImage = `url(img/champion/tiles/${selectchampions[index].image.full})`;
+      champ.style.backgroundSize = '100%';
+      champ.style.border = 'solid 2px chartreuse';
+      champ.style.borderRadius = '100%';
+    })
+  })
+};
+
+
 window.onload = async function onload() {
   try {
     const champions0 = await fetchResponse();
     const arrchampions = Object.values(champions0);
     showChampionsNames(arrchampions);
+    showChampionsFormataCardsOn(arrchampions);
   } catch (error) {
     alert(error);
   }
