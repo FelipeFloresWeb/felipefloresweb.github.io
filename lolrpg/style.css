@@ -111,6 +111,8 @@ a.link {
 
 a.link:hover {
   color: rgb(216, 175, 39);
+  font-size: 27px;
+  padding-bottom: 10px;
 }
 
 #button {

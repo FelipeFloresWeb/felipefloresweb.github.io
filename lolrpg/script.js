@@ -27,7 +27,7 @@ const generateHistoryChampion = (fighter) => `${fighter.name} "${fighter.title}"
 <a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase()
 .replace('. ', '-')
 .replace(' ', '-')
-.replace('\'', '-')}/"><br><br>(clique aqui para mais informações..)</a>`;
+.replace('\'', '-')}/"><br><br>(Clique aqui para mais informações..)</a>`;
 
 const showchamp = (fighter) => {
   const selectImages = document.querySelectorAll('.championscards');
