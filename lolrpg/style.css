@@ -40,11 +40,11 @@ body {
 }
 
 .championCard {
-  border-radius: 100%;
+  border-radius: 5px;
   border: solid 2px chartreuse;
   background-size: 100%;
-  border-radius: 100%;
   transition: 0.5s;
+  margin: 3px;
 }
 
 .champion:hover {
@@ -120,9 +120,10 @@ a.link:hover {
   padding: 5px;
   background-color: rgb(216, 175, 39);
   border: 0;
-  transition: 0.5s;
+  transition: 0.2s;
   font-family: serif;
   font-size: 20px;
+  cursor: pointer;
 }
 
 #button:hover {
@@ -153,10 +154,18 @@ a {
   color: black;
 }
 
+button {
+  cursor: pointer;
+}
+
 #footer {
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
   padding: 10px;
+}
+
+#gitHubLogo {
+  width: 50px;
 }
