@@ -53,18 +53,15 @@ body {
 }
 
 .selected {
-  font-size: 200px;
-  padding: 10px;
   position: absolute;
-  top: 40%;
   transition: 1s;
-  padding: 100px;
+  padding: 300px;
+  font-size: 200px;
+  z-index: 2;
 }
 
 .deSelected {
-  background-color: none;
   position: absolute;
-  top: 40%;
   transition: 1s;
 }
 
@@ -106,7 +103,7 @@ a.link {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 25px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 a.link:hover {
@@ -140,7 +137,7 @@ a.link:hover {
   font-size: 20px;
   border-radius: 10px;
   padding: 5px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 #linkperfil:hover {

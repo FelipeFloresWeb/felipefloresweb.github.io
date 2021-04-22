@@ -26,6 +26,7 @@ const generateHistoryChampion = (fighter) => `${fighter.name} "${fighter.title}"
     Classe: ${fighter.tags.toString().replace(',', ', ')}
 <a  class="link" target="_blank" href ="https://br.leagueoflegends.com/pt-br/champions/${(fighter.name).toString().toLowerCase()
 .replace('. ', '-')
+.replace('bardo', 'bard')
 .replace(' ', '-')
 .replace('\'', '-')}/"><br><br>(Clique aqui para mais informações..)</a>`;
 
