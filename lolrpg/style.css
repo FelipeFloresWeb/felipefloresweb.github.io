@@ -29,7 +29,7 @@ body {
 
 
 .champion {
-  color: chartreuse;
+  color: rgb(255, 238, 0);
   padding: 10px;
   font-size: 20px;
   line-height: 30px;
@@ -41,7 +41,7 @@ body {
 
 .championCard {
   border-radius: 5px;
-  border: solid 2px chartreuse;
+  border: solid 2px rgb(92, 36, 221);
   background-size: 100%;
   transition: 0.5s;
   margin: 3px;
@@ -53,15 +53,17 @@ body {
 }
 
 .selected {
-  position: absolute;
+  position: fixed;
+  top: 20%;
   transition: 1s;
-  padding: 300px;
-  font-size: 200px;
+  padding: 200px;
+  font-size: 150px;
   z-index: 2;
 }
 
 .deSelected {
-  position: absolute;
+  top: 20%;
+  position: fixed;
   transition: 1s;
 }
 
