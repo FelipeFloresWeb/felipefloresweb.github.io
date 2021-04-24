@@ -115,41 +115,20 @@ colorPixel();
 
 paintPixels({ evento: { target: { style: { backgroundColor: 'black' } } } });
 
-function clearButton() {
-  const selectPixelBoard = document.querySelector('#pixel-board');
-  const selectorBody = document.querySelector('body');
-  const createButton = document.createElement('button');
-  createButton.id = 'clear-board';
-  createButton.innerHTML = 'Limpar';
-  selectorBody.insertBefore(createButton, selectPixelBoard);
+const reponsiveDiv = () => {
+  const divResponsive = document.createElement('div');
+  const selectDivPixelBoard = document.querySelector('#pixel-board')
+  const selectorBody = document.body;
+  divResponsive.id = 'responsiveDiv';
+  selectorBody.insertBefore(divResponsive, selectDivPixelBoard);
 }
-clearButton();
 
-function clearPixels() {
-  const selectButton = document.querySelector('#clear-board');
-  function clearPixelArray() {
-    const pixelArray = document.getElementsByClassName('pixel');
-    for (let index = 0; index < pixelArray.length; index += 1) {
-      pixelArray[index].style.backgroundColor = 'white';
-    }
-  }
-  selectButton.addEventListener('click', clearPixelArray);
-}
-clearPixels();
-
-function createButtonVQV() {
-  const selectButton = document.querySelector('#clear-board');
-  const selectorBody = document.querySelector('body');
-  const createButton = document.createElement('button');
-  createButton.id = 'generate-board';
-  createButton.innerHTML = 'Ajustar tamanho do quadro';
-  selectorBody.insertBefore(createButton, selectButton);
-}
-createButtonVQV();
+reponsiveDiv();
 
 function createInputNumber() {
-  const selectGenerateBoard = document.querySelector('#generate-board');
-  const selectorBody = document.querySelector('body');
+  const selectRespDiv = document.querySelector('#responsiveDiv');
+  // const selectGenerateBoard = document.querySelector('#generate-board');
+  // const selectorBody = document.querySelector('body');
   const createInput = document.createElement('input');
   createInput.id = 'board-size';
   createInput.type = 'number';
@@ -157,7 +136,8 @@ function createInputNumber() {
   createInput.placeholder = 'min "5 máx "50"';
   createInput.min = '1';
   createInput.max = '50';
-  selectorBody.insertBefore(createInput, selectGenerateBoard);
+  // selectorBody.insertBefore(createInput, selectGenerateBoard);
+  selectRespDiv.appendChild(createInput);
 }
 createInputNumber();
 
@@ -172,6 +152,18 @@ function checkInput() {
     selectInput.value = 5;
   }
 }
+
+function createButtonVQV() {
+  const selectRespDiv = document.querySelector('#responsiveDiv');
+  // const selectButton = document.querySelector('#clear-board');
+  // const selectorBody = document.querySelector('body');
+  const createButton = document.createElement('button');
+  createButton.id = 'generate-board';
+  createButton.innerHTML = 'Ajustar tamanho do quadro';
+  // selectorBody.insertBefore(createButton, selectButton);
+  selectRespDiv.appendChild(createButton);
+}
+createButtonVQV();
 
 function makePixels(value) {
   const selectorDivPixelBoard = document.querySelector(selectIdPixelBoard);
@@ -207,12 +199,13 @@ function createDivsBonus() {
 createDivsBonus();
 
 const createButtonRemoveBords = () => {
-  const selectorBody = document.body
-  const selectButtonClear = document.querySelector('#clear-board');
+  const selectRespDiv = document.querySelector('#responsiveDiv');
+  // const selectorBody = document.body
+  // const selectButtonClear = document.querySelector('#clear-board');
   const selectDivPixelBoard = document.querySelector('#pixel-board')
   const createButton = document.createElement('button');
   createButton.innerHTML = 'Bordas ON / Off';
-  createButton.id = "clearButton"
+  createButton.id = "clearButton";
   createButton.addEventListener('click', () => {
     checkInput();
     const selectInput = document.querySelector('#board-size');
@@ -240,10 +233,34 @@ const createButtonRemoveBords = () => {
       });
     }
   })
-  selectorBody.insertBefore(createButton, selectButtonClear);
+  selectRespDiv.appendChild(createButton);
 };
 
 createButtonRemoveBords();
+
+function clearButton() {
+  // const selectPixelBoard = document.querySelector('#pixel-board');
+  // const selectorBody = document.querySelector('body');
+  const createButton = document.createElement('button');
+  const selectRespDiv = document.querySelector('#responsiveDiv');
+  createButton.id = 'clear-board';
+  createButton.innerHTML = 'Limpar';
+  // selectorBody.insertBefore(createButton, selectPixelBoard);
+  selectRespDiv.appendChild(createButton);
+}
+clearButton();
+
+function clearPixels() {
+  const selectButton = document.querySelector('#clear-board');
+  function clearPixelArray() {
+    const pixelArray = document.getElementsByClassName('pixel');
+    for (let index = 0; index < pixelArray.length; index += 1) {
+      pixelArray[index].style.backgroundColor = 'white';
+    }
+  }
+  selectButton.addEventListener('click', clearPixelArray);
+}
+clearPixels();
 
 const changeCollorsPalette = () => {
   const selectDivColorPalette = document.querySelector('#color-palette');
