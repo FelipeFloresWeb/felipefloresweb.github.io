@@ -2,8 +2,6 @@ const className = 'color selected';
 const selectIdPixelBoard = '#pixel-board';
 const display = 'inline-block';
 
-// Requirement 1;
-
 function createh1() {
   const createH1 = document.createElement('h1');
   const selectorBody = document.querySelector('body');
@@ -13,7 +11,6 @@ function createh1() {
 }
 createh1();
 
-// Requirement 2;
 
 function createCollorPalette() {
   const selectorBody = document.querySelector('body');
@@ -40,8 +37,6 @@ function createCollorsIntoPallete() {
 }
 createCollorsIntoPallete();
 
-// Requirement 4 and 5;
-
 function createPixelTable() {
   const selectorBody = document.querySelector('body');
   const createDiv = document.createElement('div');
@@ -58,8 +53,9 @@ function createPixelTableLineElements() {
   for (let index = 1; index <= 25; index += 1) {
     const selectorDivPixelBoard = document.querySelector(selectIdPixelBoard);
     const createDiv = document.createElement('div');
-    selectorDivPixelBoard.style.maxWidth = `${parseInt(6, 10) * 18.5}px`;
+    selectorDivPixelBoard.style.maxWidth = `${parseInt(6, 10) * 18.4}px`;
     createDiv.className = 'pixel';
+    createDiv.classList.add = 'removed';
     createDiv.style.backgroundColor = 'white';
     createDiv.style.height = '20px';
     createDiv.style.width = '20px';
@@ -69,8 +65,6 @@ function createPixelTableLineElements() {
   }
 }
 createPixelTableLineElements();
-
-// Requirement 6;
 
 function firstElementClassSelected() {
   const selectorFirstColor = document.querySelectorAll('div')[1];
@@ -89,8 +83,6 @@ function selectCollor(event) {
   selectItem.className = className;
 }
 
-// Requirement 7;
-
 function selectElement() {
   const selectDivColorPaletteBlack = document.querySelectorAll('.color')[0];
   const selectDivColorPaletteBlue = document.querySelectorAll('.color')[1];
@@ -102,8 +94,6 @@ function selectElement() {
   selectDivColorPaletteBlue.addEventListener('click', selectCollor);
 }
 selectElement();
-
-// Requirement 8;
 
 function paintPixels(event) {
   const evento = event.target;
@@ -147,8 +137,6 @@ function clearPixels() {
 }
 clearPixels();
 
-// Requirement 10 Bonus***;
-
 function createButtonVQV() {
   const selectButton = document.querySelector('#clear-board');
   const selectorBody = document.querySelector('body');
@@ -165,6 +153,7 @@ function createInputNumber() {
   const createInput = document.createElement('input');
   createInput.id = 'board-size';
   createInput.type = 'number';
+  createInput.value = 5;
   createInput.placeholder = 'min "5 máx "50"';
   createInput.min = '1';
   createInput.max = '50';
@@ -191,9 +180,8 @@ function makePixels(value) {
       const createDiv = document.createElement('div');
       selectorDivPixelBoard.style.maxWidth = `${parseInt(value, 10) * 22}px`;
       createDiv.className = 'pixel';
-      createDiv.classList.add('removed');
-      createDiv.style.border = 'solid 1px black'
       createDiv.style.backgroundColor = 'white';
+      createDiv.style.border = 'solid 1px black'
       selectorDivPixelBoard.appendChild(createDiv);
     }
   }
@@ -226,6 +214,7 @@ const createButtonRemoveBords = () => {
   createButton.innerHTML = 'Bordas ON / Off';
   createButton.id = "clearButton"
   createButton.addEventListener('click', () => {
+    checkInput();
     const selectInput = document.querySelector('#board-size');
     const selectDivPixel = document.querySelectorAll('.pixel');
     if (selectDivPixelBoard.classList.contains('removed')) {
@@ -272,3 +261,5 @@ const changeCollorsPalette = () => {
 };
 
 changeCollorsPalette();
+
+// const factorialV2 = (n) => Array.from(Array(n).keys(), (value) => value + 1).reduce((fac, num) => num * fac, 1);
