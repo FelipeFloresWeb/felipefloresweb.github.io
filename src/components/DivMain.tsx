@@ -1,9 +1,12 @@
 import React from "react";
+import { Header } from "./Header";
+import { StoryTelling } from "./StoryTelling";
 
 export function DivMain() {
     return(
       <div className="div-mae">
-        <h1>Sou a div mãe</h1>
+        <Header />
+        <StoryTelling />
       </div>
     )
   }

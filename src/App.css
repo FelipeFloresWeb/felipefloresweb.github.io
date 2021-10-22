@@ -5,17 +5,34 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
 .App {
   text-align: center;
 }
 
 .div-mae {
-  border-top: solid 0.5em #000000 ;
-  border-left: solid 0.5em #000000 ;
-
+  /* border-top: solid 0.5em #000000 ;
+  border-left: solid 0.5em #000000 ; */
+  border: solid 1px black ;
   margin: 1em;
-  height: 40em;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 40em;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.div-filha {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  height: max-content;
+  justify-content: space-around;
+}
+
+.div-filha-h2 {
+  margin: 0.5em;
+  /* border: solid 1px black; */
 }
